@@ -18,4 +18,14 @@ For the MPPT functionality, the system required both power measurement and a con
 As an additional feature, I integrated an IR receiver module to enable wireless switching and control of the outputs using a remote controller.
 At the end the schematic was converter to a PCB and soldered by hand when it arrived.
 
+![Scheamtic](images/Schematic.png)
+
+# Software
+Communication between components and microcontroller programming were implemented using both I2C and SPI protocols. Devices connected through I2C were differentiated by unique addresses, while SPI peripherals were managed through dedicated chip-select lines.
+Output selection and control were integrated into the device GUI, allowing the user to manage each output channel individually. Every output supports PWM control for adjustable power delivery and includes overcurrent protection with automatic shutdown functionality to improve system safety and reliability.
+
 # Hardships
+One of the main challenges encountered during development was configuring the touch display functionality, which was ultimately unsuccessful. Fortunately, the implemented IR receiver provided an alternative method for user input and system control, allowing the project to remain functional despite the limitation.
+Another issue originated from the digital potentiometer implementation. During the design phase, an error was made by connecting the potentiometer terminals to a voltage higher than the IC supply voltage. This hardware design mistake prevented proper operation of dynamic power point tracking, making it impossible to fully implement the intended maximum power optimization functionality.
+
+# Final product
