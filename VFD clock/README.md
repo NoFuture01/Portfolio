@@ -73,6 +73,7 @@ The completed project successfully demonstrated:
 - Embedded firmware development on AVR architecture
 - RTC communication using I²C
 - Hardware debugging and validation techniques
+- PCB design and assembly
 
 The project provided practical experience in embedded electronics design while highlighting real-world challenges involved in integrating legacy display technology with modern control systems.
 
