@@ -37,7 +37,7 @@ The FPC connectors were designed to create a chaining system, allowing multiple 
 
 This makes the overall display size highly configurable while also simplifying maintenance. Individual panels can be removed or replaced without having to redesign or rebuild the entire display.
 
-![PCB1](images/Pcb1.png)
+![PCB1](images/PCB1.png)
 
 Designing the matrix PCB was one of the more challenging parts of the project due to the large number of traces that needed to be routed while keeping the board compact.
 
